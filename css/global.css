@@ -87,9 +87,10 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "content"
-        "event"
-        "soutien";
+        "asso"
+        "sterilisation"
+        "don"
+        "links";
     gap: 20px;
     margin: 20px;
 }
@@ -109,7 +110,7 @@ p {
         "FA"
         "benevole"
         "blablacat"
-        "dons";
+        "urgence";
     gap: 20px;
     margin: 20px;
 }
@@ -135,16 +136,20 @@ h2 {
     text-align: center;
 }
 
-.content {
-    grid-area: content;
+.asso {
+    grid-area: asso;
 }
 
-.event {
-    grid-area: event;
+.links {
+    grid-area: links;
 }
 
-.soutien {
-    grid-area: soutien;
+.don {
+    grid-area: don;
+}
+
+.sterilisation {
+    grid-area: sterilisation;
 }
 
 .adopt {
@@ -164,7 +169,7 @@ h2 {
     grid-area: FA;
 }
 
-.FA > ul {
+main ul {
     list-style: none;
     margin-left: 20px;
 }
@@ -242,18 +247,18 @@ footer a:hover {
     }
 
     .indexmain {
-        grid-template-columns: 5fr 3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "content event"
-            "content soutien";
+            "asso sterilisation"
+            "don links";
     }
 
     .soutienmain {
         grid-template-columns: 5fr 3fr;
         grid-template-areas: 
+            "FA urgence"
             "FA benevole"
-            "FA blablacat"
-            "FA dons";
+            "FA blablacat";
     }
 
     .adoptmain {
