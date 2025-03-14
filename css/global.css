@@ -118,6 +118,7 @@ p {
     grid-template-areas: 
         "urgence"
         "FA"
+        "teaming"
         "benevole"
         "blablacat";
     grid-auto-rows: min-content;
@@ -269,6 +270,14 @@ h2 {
     grid-area: FA;
 }
 
+.urgence {
+    grid-area: urgence;
+}
+
+.teaming {
+    grid-area: teaming;
+}
+
 .benevole {
     grid-area: benevole;
 }
@@ -363,6 +372,7 @@ footer a:hover {
         grid-template-columns: 5fr 3fr;
         grid-template-areas: 
             "FA urgence"
+            "FA teaming"
             "FA benevole"
             "FA blablacat";
     }
