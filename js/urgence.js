@@ -1,13 +1,13 @@
 window.onload = () => {
-    // Vérifie si la pop-up a déjà été affichée
-    if (!localStorage.getItem("popupShown")) {
+    // Vérifie si la pop-up a déjà été affichée dans cette session
+    if (!sessionStorage.getItem("popupShown")) {
         setTimeout(() => {
             // Affiche la popup après 3 secondes
             document.getElementById("urgentPopUp").style.display = "flex";
             document.querySelector(".overlay").classList.add("displayPopUp");
-            // Marque la pop-up comme affichée
-            localStorage.setItem("popupShown", "true");
-        }, 3000); // Délai de 3 secondes
+            // Marque la pop-up comme affichée pour cette session
+            sessionStorage.setItem("popupShown", "true");
+        }, 3000);
     }
 
     // Fermeture de la popup
