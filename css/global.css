@@ -49,12 +49,16 @@ p {
 }
 
 .banner h1 {
-    cursor: default;
     font-family: "Grand Hotel", serif;
     font-size: clamp(3.5rem, 10vw, 8rem); 
     color: #b44228ff;
     text-shadow: 2px 2px 0.2rem #150f0fff;
     line-height: 6rem;
+}
+
+.banner:hover {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .menu {
@@ -208,10 +212,9 @@ h2 {
 
 #urgentPopUp {
     flex-direction: column;
-    top: calc(60vh / 2);
+    top: calc(10vh / 2);
     left: calc(60vw / 2);
     width: 40vw;
-    height: 40vh;
 }
 
 .overlay {
