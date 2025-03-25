@@ -236,7 +236,7 @@ h2 {
     object-fit: contain;
 }
 
-#closePopUp {
+.noticePopUp, #closePopUp {
     cursor: pointer;
     margin-bottom: 10px;
     font-weight: bold;
@@ -261,12 +261,6 @@ h2 {
 .displayPopUp {
     display: flex;
     flex-direction: column;
-}
-
-.noticePopUp, #closePopUp {
-    display: block;
-    cursor: pointer;
-    margin: 0 auto;
 }
 
 .contentPopUp {
