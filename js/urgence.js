@@ -15,4 +15,9 @@ window.onload = () => {
         document.getElementById("urgentPopUp").style.display = "none";
         document.querySelector(".overlay").classList.remove("displayPopUp");
     });
+
+    document.querySelector(".overlay").addEventListener("click", () => {
+        document.getElementById("urgentPopUp").style.display = "none";
+        document.querySelector(".overlay").classList.remove("displayPopUp");
+    });
 };
