@@ -110,8 +110,7 @@ p {
 
 .adoptmain {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
     gap: 20px;
     margin: 20px;
 }
@@ -133,14 +132,16 @@ p {
 main > * {
     align-self: start;
     padding: 10px;
-    border: 2px solid #ccd0d1ff;
+    border: 1px solid #ccd0d1ff;
+    border-radius: 10px;
     box-shadow: 2px 2px 5px #ccd0d1ff;
 }
 
 main img {
     width: 100%;
     margin-right: 10px;
-    border: 1px solid #150f0fff;
+    border: 2px solid #150f0fff;
+    border-radius: 5px;
     float: left;
 }
 
@@ -401,6 +402,11 @@ footer a:hover {
             "asso sterilisation"
             "don sterilisation"
             "don links";
+    }
+
+    
+    .adoptmain {
+        grid-template-columns: 1fr 1fr;
     }
 
     .soutienmain {
