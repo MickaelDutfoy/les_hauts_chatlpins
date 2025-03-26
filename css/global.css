@@ -192,8 +192,8 @@ h2 {
 .adopt img, .contentPopUp img {
     display: block;
     margin: auto;
-    height: 350px;
-    width: auto;
+    height: auto;
+    width: 310px;
 }
 
 .overlay {
@@ -372,28 +372,28 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
     #urgentPopUp {
         width: 70vw;
         max-width: 600px;
         max-height: 80vh;
         padding: 20px;
     }
-
-    .menu ul {
-        flex-direction: row;
-    }
 }
 
 @media (min-width: 1024px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
     #urgentPopUp {
         width: 60vw;
         max-width: 700px;
         max-height: 80vh;
         padding: 25px;
-    }
-
-    .menu ul {
-        flex-direction: row;
     }
 
     .indexmain {
@@ -407,6 +407,13 @@ footer a:hover {
     
     .adoptmain {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .adopt img, .contentPopUp img {
+        display: block;
+        margin: auto;
+        height: 350px;
+        width: auto;
     }
 
     .soutienmain {
