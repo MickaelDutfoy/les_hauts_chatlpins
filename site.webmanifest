@@ -1,0 +1,16 @@
+{
+    "name": "Les Hauts Chat'lpins",
+    "short_name": "Les Hauts Chat'lpins",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "type": "image/x-icon",
+        "sizes": "128x128"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+  }
+  
