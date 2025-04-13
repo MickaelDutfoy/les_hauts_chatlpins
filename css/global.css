@@ -403,7 +403,6 @@ footer a:hover {
             "don sterilisation"
             "don links";
     }
-
     
     .adoptmain {
         grid-template-columns: 1fr 1fr;
@@ -414,6 +413,10 @@ footer a:hover {
         margin: auto;
         height: 350px;
         width: auto;
+    }
+
+    .adopt > img {
+        cursor: pointer;
     }
 
     .soutienmain {
