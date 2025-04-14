@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mickaël Dutfoy">
+    <meta name="description" content="Les Hauts Chat'lpins est une association située dans les Hautes-Alpes dédiée à la protection et à l'adoption de chats.">
+    <meta property="og:site_name" content="Les Hauts Chat'lpins">
+    <title>Les Hauts Chat'lpins - Association de protection féline</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Les Hauts Chat'lpins",
+            "url": "https://www.leshautschatlpins.fr/",
+            "logo": "https://www.leshautschatlpins.fr/img/logo-s.png",
+            "description": "Association dédiée à la protection des chats dans les Hautes-Alpes.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1 Allée de la Selve",
+              "addressLocality": "Guillestre",
+              "postalCode": "05600",
+              "addressCountry": "FR"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+33613017658",
+              "contactType": "customer service"
+            },
+            "sameAs": [
+              "https://www.facebook.com/leshautschatlpins",
+              "https://www.helloasso.com/associations/les-hauts-chat-lpins"
+            ]
+          }
+    </script> 
+</head>
+<body>
+    <header>
+        <a class="banner" href="index.html">
+            <img src="img/logo-s.png" alt="Logo des Hauts Chat'lpins">
+            <h1>Les Hauts Chat'lpins</h1>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">L'association</a></li>
+                <li><a href="adopter.html">Nos chats à l'adoption</a></li>
+                <li><a href="soutenir.html">Nous soutenir</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactmain">
+        <form action="https://formsubmit.co/leshautschatlpins@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="_honey" id="honeyPot" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.leshautschatlpins.fr/merci.html">
+
+            <input type="text" name="name" placeholder="Indiquez vos nom et prénom" required>
+            <input type="email" name="email" placeholder="Indiquez votre adresse mail" required>
+            <input type="tel" name="tel" placeholder="Indiquez votre numéro de téléphone" required>
+            <select name="demande" id="demande">
+                <option value="default" disabled selected>Veuillez choisir le motif de votre message</option>
+                <option value="benevolat">Je souhaite devenir bénévole pour l'association</option>
+                <option value="sauvetage">Je souhaite signaler un chat errant et/ou abandonné</option>
+                <option value="adoption">Je souhaite adopter un chat</option>
+                <option value="abandon">Je souhaite abandonner mon chat</option>
+            </select>
+            <p id="select_warning">Veuillez sélectionner un motif pour votre message.</p>
+
+            <!-- Formulaire bénévolat -->
+            <p class="contact_benevolat">Comment souhaitez-vous vous investir ?</p>
+            <label class="contact_benevolat">
+                <input type="checkbox" name="benevolat_roles[]" value="famille_accueil">
+                Faire famille d'accueil
+            </label>
+            <label class="contact_benevolat">
+                <input type="checkbox" name="benevolat_roles[]" value="transport">
+                Aide au transport de chats
+            </label>
+            <label class="contact_benevolat">
+                <input type="checkbox" name="benevolat_roles[]" value="administratif">
+                Aide administrative, secrétariat
+            </label>
+            <label class="contact_benevolat">
+                <input type="checkbox" name="benevolat_roles[]" value="fonds">
+                Aide aux récoltes de fonds
+            </label>
+            <label class="contact_benevolat">
+                <input type="checkbox" name="benevolat_roles[]" value="fonds">
+                Autre (faites-nous part de idées ci-dessous 👇)
+            </label><br>
+            <textarea class="contact_benevolat" name="benevolat_details" rows="10" placeholder="Vous voulez aider l'association ? Dites-nous tout !"></textarea>
+
+            <!-- Formulaire sauvetage -->
+            <input class="contact_sauvetage" type="text" name="sauvetage_commune" placeholder="Dans quelle commune se trouve le chat ?">
+            <p class="contact_sauvetage">Le chat semble :</p>
+            <label class="contact_sauvetage">
+                <input class="radio_sauvetage" type="radio" name="sociabilite" value="sociable">
+                Sociable
+            </label>
+            <label class="contact_sauvetage">
+                <input class="radio_sauvetage" type="radio" name="sociabilite" value="sauvage">
+                Sauvage
+            </label>
+            <textarea class="contact_sauvetage" name="sauvetage_details" rows="10" placeholder="Donnez-nous un maximum de détails sur l'état apparent du chat et la situation."></textarea>
+            <label class="contact_sauvetage">
+                Ajouter une photo (facultatif) :
+                <input type="file" name="photo_chat" accept="image/png, image/jpeg">
+            </label>
+            
+            <!-- Formulaire adoption -->
+            <p class="contact_adoption">Êtes-vous plutôt intéressé par un chaton ou un adulte ?</p>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_age" value="chaton">
+                Chaton
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_age" value="adulte">
+                Adulte
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_age" value="indifferent">
+                Indifférent
+            </label>
+            <p class="contact_adoption">Avez-vous une préférence pour le sexe de l'animal ?</p>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_sexe" value="male">
+                Mâle
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_sexe" value="femelle">
+                Femelle
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_sexe" value="indifferent">
+                Indifférent
+            </label>
+            <p class="contact_adoption">Quel type d'accès extérieur avez-vous ?</p>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_acces" value="jardin">
+                Jardin
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_acces" value="balcon">
+                Terrasse ou balcon
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_acces" value="aucun">
+                Pas d'extérieur
+            </label>
+            <p class="contact_adoption">Y a-t-il une route passante à proximité ?</p>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_route" value="oui">
+                Oui
+            </label>
+            <label class="contact_adoption">
+                <input class="radio_adoption" type="radio" name="adoption_route" value="non">
+                Non
+            </label>
+            <input class="not_required contact_adoption" type="text" name="adoption_animaux" placeholder="Avez-vous repéré sur notre site un chat qui vous intéresse ? Si non, laissez ce champ vide.">
+            <input class="contact_adoption" type="text" name="adoption_animaux" placeholder="Avez-vous d'autres animaux ? Si oui, précisez.">
+            <input class="contact_adoption" type="text" name="adoption_enfants" placeholder="Avez-vous des enfants ?">
+            <input class="contact_adoption" type="text" name="adoption_commune" placeholder="Dans quelle commune résidez-vous ?">
+            <textarea class="contact_adoption" name="adoption_mode_vie" rows="10" placeholder="Donnez-nous un maximum de détails sur votre mode de vie et les conditions d'accueil du chat (temps de présence au domicile, possibilités de sorties, etc)."></textarea>
+
+            <!-- Formulaire abandon -->
+            <p class="contact_abandon">Quel est le sexe du chat ?</p>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_sexe" value="male">
+                Mâle
+            </label>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_sexe" value="femelle">
+                Femelle
+            </label>
+            <p class="contact_abandon">Est-il stérilisé / castré ?</p>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_sterilisation" value="oui">
+                Oui
+            </label>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_sterilisation" value="non">
+                Non
+            </label>
+            <p class="contact_abandon">Est-il identifié ?</p>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_identification" value="oui">
+                Oui
+            </label>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_identification" value="non">
+                Non
+            </label>
+            <p class="contact_abandon">Est-il vacciné ?</p>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_vaccins" value="oui">
+                Oui
+            </label>
+            <label class="contact_abandon">
+                <input type="radio" class="radio_abandon" name="abandon_vaccins" value="non">
+                Non
+            </label>
+            <input class="contact_abandon" type="text" name="abandon_age" placeholder="Quel âge a votre chat ?">
+            <textarea class="contact_abandon" name="abandon_details" rows="10" placeholder="Donnez-nous un maximum de détails sur la situation (ce qui vous pousse à abandonner le chat, sa personnalité, ses habitudes, etc)."></textarea>
+
+            <!-- Validation -->
+            <button id="send" type="submit">Envoyer 🐱</button>
+        </form>
+    </main>
+    <footer>
+        <div class="social-media">
+            <h3>Retrouvez-nous sur les réseaux sociaux :</h3>
+            <nav class="social-menu">
+                <ul>
+                    <li><a href="https://www.facebook.com/leshautschatlpins/" target="_blank"><img src="img/FB.png" alt="Logo Facebook"> Facebook</a></li>
+                    <li><a href="https://www.helloasso.com/associations/les-hauts-chat-lpins" target="_blank"><img src="img/HA.png" alt=""> HelloAsso</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="coord">
+            <address>Les Hauts Chat'lpins<br>1 Allée de la Selve<br>05600 Guillestre</address>
+            <a href="tel:+33613017658">06.13.01.76.58</a><br>
+            <a href="mailto:leshautschatlpins@gmail.com">leshautschatlpins@gmail.com</a>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>
