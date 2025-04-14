@@ -70,6 +70,7 @@ function displayForm() {
     } else if (selector.value === "abandon") {
         abandonForm.forEach(item => {
             item.style.display = "block";
+            item.setAttribute("required", "true");
         });
         let radios = document.querySelectorAll(".radio_abandon");
         activateRadios(radios);
