@@ -9,7 +9,7 @@ forest: #428c3dff; */
 }
 
 body {
-    background: linear-gradient(to bottom right, white, #eef2f3ff) no-repeat fixed;
+    background: linear-gradient(to bottom right, #fff3f4ff, #eef2f3ff) no-repeat fixed;
     font-family: "Lato", serif;
     color: #150f0fff;
     line-height: 1.5em;
@@ -139,9 +139,10 @@ p {
 main > * {
     align-self: start;
     padding: 10px;
-    border: 1px solid #ccd0d1ff;
+    background-color: #ddd;
+    border: 1px solid #bbb;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #ccd0d1ff;
+    box-shadow: 3px 3px 5px #ccd0d1ff;
 }
 
 main img {
@@ -217,7 +218,7 @@ h2 {
 }
 
 #urgentPopUp {
-    background: linear-gradient(to bottom right, white, #eef2f3ff);
+    background: linear-gradient(to bottom right, #fff3f4ff, #eef2f3ff);
     border: 3px solid #b44228ff;
     border-radius: 10px;
     display: none;
