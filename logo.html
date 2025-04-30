@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Hauts Chat'lpins - Logo HD</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet" />
+
+  <style>
+    .logo-container {
+      position: relative;
+      width: 600px; /* Espace de travail augmenté */
+      height: 600px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .curved-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .curved-text text {
+      font-size: 56px;
+      font-family: 'Grand Hotel', cursive;
+      font-weight: bold;
+      fill: #b44228;
+      text-shadow: 2px 2px 0.2rem #150f0f;
+      letter-spacing: 7px;
+    }
+
+    .curved-text textPath:last-child {
+      letter-spacing: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="img/logo-s.png" alt="Mon logo" class="logo" />
+
+    <svg class="curved-text" width="600" height="600" viewBox="0 0 600 600">
+      <defs>
+        <!-- Cercles ajustés à la nouvelle taille -->
+        <path id="circlePathUp" d="M310,270 m-150,0 a150,150 0 1,1 300,0 a150,150 0 1,1 -300,0" />
+        <path id="circlePathBottom" d="M300,295 m-150,-20 a165,165 0 1,1 295,0 a165,170 0 1,1 -295,0" />
+      </defs>
+
+      <text>
+        <textPath href="#circlePathUp" startOffset="11%">Les Hauts</textPath>
+        <textPath href="#circlePathBottom" startOffset="15%" side="right">Chat'lpins</textPath>
+      </text>
+    </svg>
+  </div>
+</body>
+</html>
