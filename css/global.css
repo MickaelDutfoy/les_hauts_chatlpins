@@ -298,6 +298,10 @@ h2 {
     overflow-y: auto;
 }
 
+.contentPopUp img {
+    width: 100%;
+}
+
 .photo1 {
     grid-area: photo1;
 }
@@ -313,6 +317,10 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+}
+
+.contactmain form {
+    width: calc(100% - 40px);
 }
 
 .contactmain input, .contactmain select, .contactmain textarea, .contactmain option {
