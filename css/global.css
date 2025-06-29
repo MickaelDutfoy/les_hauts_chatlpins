@@ -266,6 +266,10 @@ h2 {
     justify-content: space-around;
 }
 
+.contentUrgent > div {
+    padding: 10px;
+}
+
 .contentUrgent img {
     border: 2px solid var(--licorice);
     border-radius: 5px;
