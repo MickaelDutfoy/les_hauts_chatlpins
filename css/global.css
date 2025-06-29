@@ -207,7 +207,7 @@ h2 {
 
 .adopt {
     display: flex;
-    user-select: none;
+    /* user-select: none; */
     flex-direction: column;
     justify-content: center;
 }
@@ -240,7 +240,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: auto;
+    overflow-y: auto;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -258,6 +258,21 @@ h2 {
     max-height: 75vh;
     object-fit: contain;
 }
+
+    /* Grisette & Tricot */
+.urgentPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contentUrgent img {
+    border: 2px solid var(--licorice);
+    border-radius: 5px;
+    width: 48%;
+    height: auto;
+}
+    /* Fin Grisette & Tricot */
 
 .noticePopUp, #closePopUp {
     cursor: pointer;
@@ -320,7 +335,7 @@ form {
 }
 
 .contactmain form {
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
 }
 
 .contactmain input, .contactmain select, .contactmain textarea, .contactmain option {
