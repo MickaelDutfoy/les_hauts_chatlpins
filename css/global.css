@@ -196,8 +196,13 @@ h2 {
     text-align: center;
 }
 
-.actu iframe {
+/* .actu iframe {
     border: none;
+} */
+
+.tempo-HA {
+    border: 2px solid var(--licorice);
+    border-radius: 5px;
 }
 
 .notice {
@@ -207,7 +212,6 @@ h2 {
 
 .adopt {
     display: flex;
-    /* user-select: none; */
     flex-direction: column;
     justify-content: center;
 }
