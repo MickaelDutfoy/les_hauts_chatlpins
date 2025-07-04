@@ -493,6 +493,10 @@ footer a:hover {
         flex-direction: row;
         justify-content: center;
     }
+
+    .minou-HA p {
+        margin-left: -40px;
+    }
 }
 /* Fin Temporaire */
 
