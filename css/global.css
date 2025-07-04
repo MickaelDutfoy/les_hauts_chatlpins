@@ -200,10 +200,19 @@ h2 {
     border: none;
 } */
 
+/* Temporaire */
 .tempo-HA {
     border: 2px solid var(--licorice);
     border-radius: 5px;
+    height: 353px;
 }
+
+.minou-HA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Fin Temporaire */
 
 .notice {
     text-align: center;
@@ -263,7 +272,7 @@ h2 {
     object-fit: contain;
 }
 
-    /* Grisette & Tricot */
+/* Temporaire */
 .urgentPics {
     display: flex;
     flex-direction: row;
@@ -280,7 +289,7 @@ h2 {
     width: 48%;
     height: auto;
 }
-    /* Fin Grisette & Tricot */
+/* Fin Temporaire */
 
 .noticePopUp, #closePopUp {
     cursor: pointer;
@@ -470,7 +479,6 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
     #urgentPopUp {
         width: 70vw;
         max-width: 600px;
@@ -478,6 +486,14 @@ footer a:hover {
         padding: 20px;
     }
 }
+
+/* Temporaire */
+@media (min-width: 905px) {
+    .minou-HA {
+        flex-direction: row;
+    }
+}
+/* Fin Temporaire */
 
 @media (min-width: 1024px) {
     .menu ul {
@@ -510,10 +526,11 @@ footer a:hover {
 
     .col.gauche {
         flex: 1 1 55%;
-      }
-      .col.droite {
+    }
+    
+    .col.droite {
         flex: 1 1 43%;
-      }
+    }
 
     .adopt img, .contentPopUp img {
         display: block;
