@@ -201,7 +201,7 @@ h2 {
     border: none;
 } */
 
-.tempo-HA {
+#haWidget {
     border: 2px solid var(--licorice);
     border-radius: 5px;
     height: 353px;
