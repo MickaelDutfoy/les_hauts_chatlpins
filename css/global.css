@@ -50,6 +50,7 @@
 body {
     background: var(--gradient-antiflash-white);
     font-family: "Lato", serif;
+    font-size: 18px;
     color: var(--licorice);
     line-height: 1.5em;
 }
